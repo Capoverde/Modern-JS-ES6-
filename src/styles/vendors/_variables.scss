@@ -1,0 +1,23 @@
+// -----------------------------
+//            GLOBALS
+// -----------------------------
+
+$primaryColor: #dddddd;
+$bodyColor: #363636;
+
+// colors palette:
+$siteColors:(h1: $primaryColor,
+h2: $primaryColor,
+h3: $primaryColor,
+h4: $primaryColor,
+h5: $primaryColor,
+h6: $primaryColor,
+a: $primaryColor,
+div: $primaryColor);
+
+@each $el,
+$color in $siteColors {
+  #{$el} {
+    color: $color
+  }
+}
